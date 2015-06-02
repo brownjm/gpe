@@ -170,7 +170,7 @@ class Kinetic:
         return new
 
 
-class Potential:
+class Potential(object):
     """Potential V in Hamiltonian"""
     def __init__(self, potential_name):
         self.func = self.__getattribute__(potential_name)
@@ -360,7 +360,7 @@ if __name__ == '__main__':
               'xmax': 7,
               'BC': 'reflect',
               'nonlinearity': 4,
-              'initial': Vortex('wf.dat'),#QHO(n=0,xshift=0),#GaussianWavepacket(1, 0, 0),#QHO(n=0, xshift=0),#File('wf.dat'),  # 
+              'initial': Vortex('wf.dat'),
               'potential': 'harmonic',
               }
 
@@ -369,5 +369,5 @@ if __name__ == '__main__':
     #sim.add_observer(wfob)
     #sim.evolve(0.1)
     #sim.show()
-    #animate(sim, 5)
+    animate(sim, 5)
     #make_movie(sim, 40)

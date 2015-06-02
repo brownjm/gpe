@@ -1,0 +1,30 @@
+#    pyGPE - A simple set of Python script to solve the Gross-Pitaevskii
+#    equation for BEC's in 1D and 2D using a modified version of
+#    Visscher's method.
+#
+#    Original paper for Visscher's method:
+#    A fast explicit algorithm for the time-dependent Schroedinger equation
+#    P. B. Visscher
+#    Computers in Physics 5, 596 (1991)
+#    doi: 10.1063/1.168415
+#
+#    Copyright (C) 2015 Jeffrey M Brown
+#    brown.jeffreym@gmail.com
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+The code was developed using Python 3. It will run using Python 2, but
+the performance of matplotlib's animation function is very slow.
+
+Check out method.pdf for the details of how Visscher's method is
+applied to GPE.

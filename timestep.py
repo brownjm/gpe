@@ -155,7 +155,7 @@ class Kinetic:
         return new
 
 
-class Potential:
+class Potential(object):
     """Potential V in Hamiltonian"""
     def __init__(self, potential_name):
         self.func = self.__getattribute__(potential_name)
@@ -278,7 +278,7 @@ if __name__ == '__main__':
               'xmax': 25,
               'BC': 'reflect',
               'nonlinearity': 0,
-              'initial': GaussianWavepacket(1, 5, -4),#Sech(), #QHO(0), # 
+              'initial': GaussianWavepacket(1, 5, -4),
               'potential': 'barrier',
               }
 
